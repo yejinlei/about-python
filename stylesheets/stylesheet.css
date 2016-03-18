@@ -22,7 +22,7 @@ a {
     border-width: 1px;
     color: rgba(255, 255, 255, 1);
     display: inline-block;
-    margin-top: 10rem;
+    margin-top: 11rem;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);}
   .btn + .btn {
     margin-left: 1rem; }
