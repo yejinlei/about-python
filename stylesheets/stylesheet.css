@@ -58,7 +58,8 @@ a {
     background-position: center center;
     background-repeat: no-repeat;
     box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1) inset;
-    text-align: center; }
+    text-align: center;
+    background-size: contain }
 
 @media screen and (min-width: 64em) {
   .page-header {
