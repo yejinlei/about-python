@@ -16,15 +16,14 @@ a {
     text-decoration: underline; }
 
 .btn {
-  display: inline-block;
-  margin-bottom: 1rem;
-  color: rgba(255, 255, 255, 0.7);
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0.3rem;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
+  border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    border-style: solid;
+    border-width: 1px;
+    color: rgba(255, 255, 255, 1);
+    display: inline-block;
+    margin-top: 10rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);}
   .btn + .btn {
     margin-left: 1rem; }
 
@@ -54,10 +53,12 @@ a {
       margin-left: 0; } }
 
 .page-header {
-  color: #fff;
-  text-align: center;
-  background-color: #159957;
-  background-image: linear-gradient(120deg, #155799, #159957); }
+  background-color: #fff;
+    background-image: url("https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1) inset;
+    text-align: center; }
 
 @media screen and (min-width: 64em) {
   .page-header {
