@@ -1,6 +1,8 @@
 #coding:UTF-8
 
-from ..object import *
+import sys
+sys.path.append(r'..')
+from object import *
 
 class Iterator(Object):
     def __init__(self, container):

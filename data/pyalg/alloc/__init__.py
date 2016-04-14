@@ -5,6 +5,7 @@ __date__    = u"4/13/2016"
 __version__ = u"1.0"
 __credits__ = u""
 
-from container import *
+from array import *
+from vector import *
 
 __all__ = ['Array', 'Vector']
