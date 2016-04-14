@@ -1,8 +1,11 @@
 #coding:UTF-8
 
-from array import *
+from arr import *
 
 class Vector(Array):
+    def __init__(self, maxlen = 0):
+        super(Vector, self).__init__(maxlen)
+
     def _compareTo(self, other):
         raise NotImplemented
 
@@ -51,3 +54,9 @@ class Vector(Array):
         if len_items == 0:
             return None
         return  self._items[len_items - 1]
+
+
+if __name__ == '__main__':
+    vector = Vector(1)
+    vector[1] = 100
+    print vector
