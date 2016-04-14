@@ -57,6 +57,6 @@ class Vector(Array):
 
 
 if __name__ == '__main__':
-    vector = Vector(1)
+    vector = Vector(10)
     vector[1] = 100
     print vector
