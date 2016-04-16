@@ -2,7 +2,7 @@
 
 import sys
 sys.path.append(r'..')
-from object import *
+from ..object import *
 
 class Iterator(Object):
     def __init__(self, container):

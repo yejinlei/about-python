@@ -2,7 +2,7 @@
 
 import sys
 sys.path.append(r'..')
-from object import *
+from ..object import *
 
 class Array(Object):
     def __init__(self, maxlen = 0):
