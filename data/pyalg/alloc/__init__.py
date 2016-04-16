@@ -2,5 +2,3 @@
 
 from arr import *
 from vector import *
-
-__all__ = ['Array', 'Vector']
