@@ -1,4 +1,15 @@
 #coding:UTF-8
+"""
+What is :
+   quick find Script
+
+Description :
+   快速查找内容脚本
+   依赖https://www.voidtools.com/的everything
+
+"""
+
+from __future__ import print_function
 import re,os,sys
 from multiprocessing import *
 from threading import Thread
@@ -425,7 +436,7 @@ def PTask(task, key, iswarp = False):
             with open(task, 'r') as f:
                 text = f.read()
                 if len(re.findall(key, text)) != 0:
-                    print u'{}'.format(task)
+                    print(u'{}'.format(task))
         except:
             pass
 
@@ -449,17 +460,17 @@ def main():
     for line in lines:
         taskset.add(line.split('\n')[0])
 
-    print u'任务数：{}'.format(len(taskset))
-    if 100 < len(taskset) and len(taskset) < 60000:
-        print u'多线程模式'
+    print(u'Task：{}'.format(len(taskset)))
+    if 100 < len(taskset) and len(taskset) < 600:
+        print(u'multi process')
         # p = Pool(cpu_count())
         # for index, task in enumerate(taskset):
         #     p.apply_async(func=PTask, args=(task, key) )
         # p.close()
         # p.join()
         PTaskExcutor(taskset, key)
-    elif len(taskset) >= 60000:
-        print u'多进程多线程模式'
+    elif len(taskset) >= 600:
+        print(u'multi process multi threading')
         cpu_numers = cpu_count()
         p = Pool(cpu_numers)
         taskgroup = [[] for _ in xrange(cpu_numers)]
@@ -471,7 +482,7 @@ def main():
         p.close()
         p.join()
     else:
-        print u'单进程模式'
+        print(u'single process')
         for index, task in enumerate(taskset):
             PTask(task, key)
 
@@ -479,4 +490,4 @@ if __name__ == '__main__':
     import time
     b = time.clock()
     main()
-    print time.clock() - b
+    print(time.clock() - b)
