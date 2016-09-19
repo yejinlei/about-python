@@ -19,6 +19,7 @@ def splitFeatureFromSet(dataSet, selCol, selValue):
 def calcEntropy(dataSet):
     n = len(dataSet)
     entropy = 0.0
+    #Counter用于统计元素的频率，但无法统计[list,list，...]
     dataDict = Counter([str(row) for row in dataSet])
     for c in dataDict.itervalues():
         p = c / n
