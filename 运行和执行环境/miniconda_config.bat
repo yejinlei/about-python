@@ -22,10 +22,7 @@ if not exist %file% (
 ) else ( echo %file%+"ÒÑ¾­´æÔÚ" )
 pause
 
-#CALL conda config --set ssl_verify false
-#CALL conda update requests
-#CALL conda config --set ssl_verify true
-#CALL conda update conda
-
-conda install -c conda-forge jupyter_contrib_nbextensions &
-jupyter contrib nbextension install --user
+CALL conda config --set ssl_verify false
+CALL conda update requests
+CALL conda config --set ssl_verify true
+CALL conda update conda
