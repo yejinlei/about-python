@@ -35,7 +35,7 @@ enum34==1.1.2
 et-xmlfile==1.0.1
 fastcache==1.0.2
 findeverything==0.1.1
-Flask==0.10.1
+Flask==1.0
 funcsigs==0.4
 futures==3.0.5
 gevent==1.0.2
