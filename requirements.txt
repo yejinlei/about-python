@@ -61,7 +61,7 @@ jupyter-client==4.1.1
 jupyter-console==4.1.0
 jupyter-core==4.0.6
 llvmlite==0.8.0
-lxml==3.5.0
+lxml==4.6.3
 Mako==1.0.4
 MarkupSafe==0.23
 matplotlib==1.5.1
